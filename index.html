@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Periodic Table (1-40)</title>
+<title>Periodic Table (1-118)</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.3.1/d3.min.js"></script>
 
 <style>
@@ -116,7 +116,7 @@ h1{margin:0;font-family:"Merriweather",serif;font-weight:700;font-size:1.4rem;
 </head>
 <body>
 <div id="wrap">
-  <div class="header"><h1>Periodic Table (1-40)</h1></div>
+  <div class="header"><h1>Periodic Table (1-118)</h1></div>
   <div class="table-wrapper"><div id="container"></div></div>
 </div>
 
@@ -184,9 +184,98 @@ document.addEventListener("DOMContentLoaded", () => {
     {n:37, s:"Rb", name:"Rubidium", w:"85.468", x:1, y:5, color:"#f05454", phase:"Solid", img:"images/Rb.jpg"},
     {n:38, s:"Sr", name:"Strontium", w:"87.62", x:2, y:5, color:"#ffa36c", phase:"Solid", img:"images/Sr.jpg"},
     {n:39, s:"Y", name:"Yttrium", w:"88.906", x:3, y:5, color:"#fcf876", phase:"Solid", img:"images/Y.jpg"},
-    {n:40, s:"Zr", name:"Zirconium", w:"91.224", x:4, y:5, color:"#fcf876", phase:"Solid", img:"images/Zr.jpg"}
+    {n:40, s:"Zr", name:"Zirconium", w:"91.224", x:4, y:5, color:"#fcf876", phase:"Solid", img:"images/Zr.jpg"},
+
+    /* period 5 continued */
+    {n:41, s:"Nb", name:"Niobium", w:"92.906", x:5, y:5, color:"#fcf876", phase:"Solid", img:"images/Nb.jpg"},
+    {n:42, s:"Mo", name:"Molybdenum", w:"95.95", x:6, y:5, color:"#fcf876", phase:"Solid", img:"images/Mo.jpg"},
+    {n:43, s:"Tc", name:"Technetium", w:"98", x:7, y:5, color:"#fcf876", phase:"Solid", img:"images/Tc.jpg"},
+    {n:44, s:"Ru", name:"Ruthenium", w:"101.07", x:8, y:5, color:"#fcf876", phase:"Solid", img:"images/Ru.jpg"},
+    {n:45, s:"Rh", name:"Rhodium", w:"102.91", x:9, y:5, color:"#fcf876", phase:"Solid", img:"images/Rh.jpg"},
+    {n:46, s:"Pd", name:"Palladium", w:"106.42", x:10, y:5, color:"#fcf876", phase:"Solid", img:"images/Pd.jpg"},
+    {n:47, s:"Ag", name:"Silver", w:"107.87", x:11, y:5, color:"#c0e218", phase:"Solid", img:"images/Ag.jpg"},
+    {n:48, s:"Cd", name:"Cadmium", w:"112.41", x:12, y:5, color:"#c0e218", phase:"Solid", img:"images/Cd.jpg"},
+    {n:49, s:"In", name:"Indium", w:"114.82", x:13, y:5, color:"#c0e218", phase:"Solid", img:"images/In.jpg"},
+    {n:50, s:"Sn", name:"Tin", w:"118.71", x:14, y:5, color:"#c0e218", phase:"Solid", img:"images/Sn.jpg"},
+    {n:51, s:"Sb", name:"Antimony", w:"121.76", x:15, y:5, color:"#64958f", phase:"Solid", img:"images/Sb.jpg"},
+    {n:52, s:"Te", name:"Tellurium", w:"127.60", x:16, y:5, color:"#8d93ab", phase:"Solid", img:"images/Te.jpg"},
+    {n:53, s:"I", name:"Iodine", w:"126.90", x:17, y:5, color:"#3d7ea6", phase:"Solid", img:"images/I.jpg"},
+    {n:54, s:"Xe", name:"Xenon", w:"131.29", x:18, y:5, color:"#bc6ff1", phase:"Gas", img:"images/Xe.jpg"},
+
+    /* period 6 main table */
+    {n:55, s:"Cs", name:"Cesium", w:"132.91", x:1, y:6, color:"#f05454", phase:"Solid", img:"images/Cs.jpg"},
+    {n:56, s:"Ba", name:"Barium", w:"137.33", x:2, y:6, color:"#ffa36c", phase:"Solid", img:"images/Ba.jpg"},
+    {n:57, s:"La", name:"Lanthanum", w:"138.91", x:3, y:6, color:"#fcf876", phase:"Solid", img:"images/La.jpg"},
+    {n:72, s:"Hf", name:"Hafnium", w:"178.49", x:4, y:6, color:"#fcf876", phase:"Solid", img:"images/Hf.jpg"},
+    {n:73, s:"Ta", name:"Tantalum", w:"180.95", x:5, y:6, color:"#fcf876", phase:"Solid", img:"images/Ta.jpg"},
+    {n:74, s:"W", name:"Tungsten", w:"183.84", x:6, y:6, color:"#fcf876", phase:"Solid", img:"images/W.jpg"},
+    {n:75, s:"Re", name:"Rhenium", w:"186.21", x:7, y:6, color:"#fcf876", phase:"Solid", img:"images/Re.jpg"},
+    {n:76, s:"Os", name:"Osmium", w:"190.23", x:8, y:6, color:"#fcf876", phase:"Solid", img:"images/Os.jpg"},
+    {n:77, s:"Ir", name:"Iridium", w:"192.22", x:9, y:6, color:"#fcf876", phase:"Solid", img:"images/Ir.jpg"},
+    {n:78, s:"Pt", name:"Platinum", w:"195.08", x:10, y:6, color:"#fcf876", phase:"Solid", img:"images/Pt.jpg"},
+    {n:79, s:"Au", name:"Gold", w:"196.97", x:11, y:6, color:"#c0e218", phase:"Solid", img:"images/Au.jpg"},
+    {n:80, s:"Hg", name:"Mercury", w:"200.59", x:12, y:6, color:"#c0e218", phase:"Liquid", img:"images/Hg.jpg"},
+    {n:81, s:"Tl", name:"Thallium", w:"204.38", x:13, y:6, color:"#c0e218", phase:"Solid", img:"images/Tl.jpg"},
+    {n:82, s:"Pb", name:"Lead", w:"207.2", x:14, y:6, color:"#c0e218", phase:"Solid", img:"images/Pb.jpg"},
+    {n:83, s:"Bi", name:"Bismuth", w:"208.98", x:15, y:6, color:"#64958f", phase:"Solid", img:"images/Bi.jpg"},
+    {n:84, s:"Po", name:"Polonium", w:"209", x:16, y:6, color:"#8d93ab", phase:"Solid", img:"images/Po.jpg"},
+    {n:85, s:"At", name:"Astatine", w:"210", x:17, y:6, color:"#3d7ea6", phase:"Solid", img:"images/At.jpg"},
+    {n:86, s:"Rn", name:"Radon", w:"222", x:18, y:6, color:"#bc6ff1", phase:"Gas", img:"images/Rn.jpg"},
+
+    /* lanthanides (row 8) 57-71 */
+    {n:58, s:"Ce", name:"Cerium", w:"140.12", x:4, y:8, color:"#f1d77a", phase:"Solid", img:"images/Ce.jpg"},
+    {n:59, s:"Pr", name:"Praseodymium", w:"140.91", x:5, y:8, color:"#f1d77a", phase:"Solid", img:"images/Pr.jpg"},
+    {n:60, s:"Nd", name:"Neodymium", w:"144.24", x:6, y:8, color:"#f1d77a", phase:"Solid", img:"images/Nd.jpg"},
+    {n:61, s:"Pm", name:"Promethium", w:"145", x:7, y:8, color:"#f1d77a", phase:"Solid", img:"images/Pm.jpg"},
+    {n:62, s:"Sm", name:"Samarium", w:"150.36", x:8, y:8, color:"#f1d77a", phase:"Solid", img:"images/Sm.jpg"},
+    {n:63, s:"Eu", name:"Europium", w:"151.96", x:9, y:8, color:"#f1d77a", phase:"Solid", img:"images/Eu.jpg"},
+    {n:64, s:"Gd", name:"Gadolinium", w:"157.25", x:10, y:8, color:"#f1d77a", phase:"Solid", img:"images/Gd.jpg"},
+    {n:65, s:"Tb", name:"Terbium", w:"158.93", x:11, y:8, color:"#f1d77a", phase:"Solid", img:"images/Tb.jpg"},
+    {n:66, s:"Dy", name:"Dysprosium", w:"162.50", x:12, y:8, color:"#f1d77a", phase:"Solid", img:"images/Dy.jpg"},
+    {n:67, s:"Ho", name:"Holmium", w:"164.93", x:13, y:8, color:"#f1d77a", phase:"Solid", img:"images/Ho.jpg"},
+    {n:68, s:"Er", name:"Erbium", w:"167.26", x:14, y:8, color:"#f1d77a", phase:"Solid", img:"images/Er.jpg"},
+    {n:69, s:"Tm", name:"Thulium", w:"168.93", x:15, y:8, color:"#f1d77a", phase:"Solid", img:"images/Tm.jpg"},
+    {n:70, s:"Yb", name:"Ytterbium", w:"173.05", x:16, y:8, color:"#f1d77a", phase:"Solid", img:"images/Yb.jpg"},
+    {n:71, s:"Lu", name:"Lutetium", w:"174.97", x:17, y:8, color:"#f1d77a", phase:"Solid", img:"images/Lu.jpg"},
+
+    /* period 7 main table */
+    {n:87, s:"Fr", name:"Francium", w:"223", x:1, y:7, color:"#f05454", phase:"Solid", img:"images/Fr.jpg"},
+    {n:88, s:"Ra", name:"Radium", w:"226", x:2, y:7, color:"#ffa36c", phase:"Solid", img:"images/Ra.jpg"},
+    {n:89, s:"Ac", name:"Actinium", w:"227", x:3, y:7, color:"#f1d77a", phase:"Solid", img:"images/Ac.jpg"},
+    {n:104, s:"Rf", name:"Rutherfordium", w:"267", x:4, y:7, color:"#e0d27a", phase:"Solid", img:"images/Rf.jpg"},
+    {n:105, s:"Db", name:"Dubnium", w:"268", x:5, y:7, color:"#e0d27a", phase:"Solid", img:"images/Db.jpg"},
+    {n:106, s:"Sg", name:"Seaborgium", w:"269", x:6, y:7, color:"#e0d27a", phase:"Solid", img:"images/Sg.jpg"},
+    {n:107, s:"Bh", name:"Bohrium", w:"270", x:7, y:7, color:"#e0d27a", phase:"Solid", img:"images/Bh.jpg"},
+    {n:108, s:"Hs", name:"Hassium", w:"269", x:8, y:7, color:"#e0d27a", phase:"Solid", img:"images/Hs.jpg"},
+    {n:109, s:"Mt", name:"Meitnerium", w:"278", x:9, y:7, color:"#e0d27a", phase:"Solid", img:"images/Mt.jpg"},
+    {n:110, s:"Ds", name:"Darmstadtium", w:"281", x:10, y:7, color:"#e0d27a", phase:"Solid", img:"images/Ds.jpg"},
+    {n:111, s:"Rg", name:"Roentgenium", w:"282", x:11, y:7, color:"#e0d27a", phase:"Solid", img:"images/Rg.jpg"},
+    {n:112, s:"Cn", name:"Copernicium", w:"285", x:12, y:7, color:"#e0d27a", phase:"Solid", img:"images/Cn.jpg"},
+    {n:113, s:"Nh", name:"Nihonium", w:"286", x:13, y:7, color:"#c0e218", phase:"Solid", img:"images/Nh.jpg"},
+    {n:114, s:"Fl", name:"Flerovium", w:"289", x:14, y:7, color:"#c0e218", phase:"Solid", img:"images/Fl.jpg"},
+    {n:115, s:"Mc", name:"Moscovium", w:"290", x:15, y:7, color:"#c0e218", phase:"Solid", img:"images/Mc.jpg"},
+    {n:116, s:"Lv", name:"Livermorium", w:"293", x:16, y:7, color:"#c0e218", phase:"Solid", img:"images/Lv.jpg"},
+    {n:117, s:"Ts", name:"Tennessine", w:"294", x:17, y:7, color:"#3d7ea6", phase:"Solid", img:"images/Ts.jpg"},
+    {n:118, s:"Og", name:"Oganesson", w:"294", x:18, y:7, color:"#bc6ff1", phase:"Gas", img:"images/Og.jpg"},
+
+    /* actinides row (90-103) y = 9 */
+    {n:90, s:"Th", name:"Thorium", w:"232.04", x:4, y:9, color:"#e8d27a", phase:"Solid", img:"images/Th.jpg"},
+    {n:91, s:"Pa", name:"Protactinium", w:"231.04", x:5, y:9, color:"#e8d27a", phase:"Solid", img:"images/Pa.jpg"},
+    {n:92, s:"U", name:"Uranium", w:"238.03", x:6, y:9, color:"#e8d27a", phase:"Solid", img:"images/U.jpg"},
+    {n:93, s:"Np", name:"Neptunium", w:"237", x:7, y:9, color:"#e8d27a", phase:"Solid", img:"images/Np.jpg"},
+    {n:94, s:"Pu", name:"Plutonium", w:"244", x:8, y:9, color:"#e8d27a", phase:"Solid", img:"images/Pu.jpg"},
+    {n:95, s:"Am", name:"Americium", w:"243", x:9, y:9, color:"#e8d27a", phase:"Solid", img:"images/Am.jpg"},
+    {n:96, s:"Cm", name:"Curium", w:"247", x:10, y:9, color:"#e8d27a", phase:"Solid", img:"images/Cm.jpg"},
+    {n:97, s:"Bk", name:"Berkelium", w:"247", x:11, y:9, color:"#e8d27a", phase:"Solid", img:"images/Bk.jpg"},
+    {n:98, s:"Cf", name:"Californium", w:"251", x:12, y:9, color:"#e8d27a", phase:"Solid", img:"images/Cf.jpg"},
+    {n:99, s:"Es", name:"Einsteinium", w:"252", x:13, y:9, color:"#e8d27a", phase:"Solid", img:"images/Es.jpg"},
+    {n:100, s:"Fm", name:"Fermium", w:"257", x:14, y:9, color:"#e8d27a", phase:"Solid", img:"images/Fm.jpg"},
+    {n:101, s:"Md", name:"Mendelevium", w:"258", x:15, y:9, color:"#e8d27a", phase:"Solid", img:"images/Md.jpg"},
+    {n:102, s:"No", name:"Nobelium", w:"259", x:16, y:9, color:"#e8d27a", phase:"Solid", img:"images/No.jpg"},
+    {n:103, s:"Lr", name:"Lawrencium", w:"262", x:17, y:9, color:"#e8d27a", phase:"Solid", img:"images/Lr.jpg"}
   ];
 
+  // pre-load images (optional)
   elements.forEach(e => { const img = new Image(); img.src = e.img; });
 
   function hexPoints(r){return range(6).map(i=>{const a=Math.PI/6+i*Math.PI/3;return [50+r*Math.cos(a),50+r*Math.sin(a)].join(",");}).join(" ");}
