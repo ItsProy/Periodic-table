@@ -193,8 +193,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   class ElementView {
     constructor(p, el) {
-      const spacingX = 4.2;
-      const spacingY = 4;
+      const spacingX = ,7.5;
+      const spacingY = 5;
       const offset = (el.y % 2) * spacingX / 2;
       this.root = p.append("div").classed("element-root", true)
         .style("left", `${el.x * spacingX + offset}vw`)
@@ -290,3 +290,4 @@ if(el.phase==="Solid"){
 </script>
 </body>
 </html>
+
